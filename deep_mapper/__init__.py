@@ -1,3 +1,5 @@
+import re
+from contextlib import suppress
 
 
 def process_mapping(data, map_options, root_path):

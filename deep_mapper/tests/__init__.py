@@ -18,9 +18,8 @@ class TestDMapper(TestCase):
         }
         result = deep_mapper.process_mapping(DATA, MAP_STRUCTURE, '/root')
         self.assertTrue(isinstance(result, list))
-        self.assertTrue(len(list) == len(DATA))
-        self.assertTrue(result[0] == DATA['root'][0]['title'])
-        print('asdfasdf')
+        self.assertTrue(len(result) == len(DATA['root']))
+        self.assertTrue(result[0]['name'] == DATA['root'][0]['title'])
 
     def test_with_various_empty_keys(self):
         MAP_STRUCTURE = {
