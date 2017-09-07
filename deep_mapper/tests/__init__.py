@@ -10,6 +10,8 @@ DATA = {
         {'title': 'here'},
     ]
 }
+
+
 class TestDMapper(TestCase):
 
     def test_only_exist_keys(self):
